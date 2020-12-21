@@ -1,0 +1,64 @@
+# Improving Unsupervised Image Clustering With Robust Learning #
+This repo is the PyTorch codes for "Improving Unsupervised Image Clustering With Robust Learning (RUC)"
+## Highlight ##
+1. RUC is an add-on module to enhance the performance of any off-the-shelf unsupervised learning algorithms. RUC is inspired by robust learning. It first divides clustered data points into clean and noisy set, then refine the clustering results. With RUC, state-of-the-art unsupervised clustering methods; SCAN and TSUC showed showed huge performance improvements. (STL-10 : 86.7%, CIFAR-10 : 90.3%, CIFAR-20 : 54.3%)
+
+<p align="center">
+  <img src="./figure/main_result.png" /> </center>
+</p>
+
+2. Prediction results of existing unsupervised learning algorithms were overconfident.  RUC can make the prediction of existing algorithms softer with better calibration.
+<p align="center">
+  <img src="./figure/confidence.png" width = 600> </center>
+</p>
+<p align="center">
+  <img src="./figure/calibration.png" width = 900> </center> 
+</p>
+
+3. Robust to adversarially crafted samples. ERM-based unsupervised clustering algorithms can be prone to adversarial attack. Adding RUC to the clustering models improves robustness against adversarial noise.
+
+<p align="center">
+  <img src="./figure/attack.png" width = 600> </center> 
+</p>
+
+## Required packages ##
+- python == 3.6.10
+- pytorch == 1.1.0
+- scikit-learn == 0.21.2
+- scipy == 1.3.0
+- numpy == 1.18.5
+- pillow == 7.1.2
+
+## Overall model architecture ##
+<center><img src="./figure/model_arch.PNG"> </center>
+
+## Usage ##
+```
+usage: main_ruc_[dataset].py [-h] [--lr LR] [--momentum M] [--weight_decay W]
+                         [--epochs EPOCHS] [--batch_size B] [--s_thr S_THR]
+                         [--n_num N_NUM] [--o_model O_MODEL]
+                         [--e_model E_MODEL] [--seed SEED]
+
+config for RUC
+
+optional arguments:
+  -h, --help            show this help message and exit
+  --lr LR               initial learning rate
+  --momentum M          momentum
+  --weight_decay        weight decay
+  --epochs EPOCHS       max epoch per round. (default: 200)
+  --batch_size B        training batch size
+  --s_thr S_THR         confidence sampling threshold
+  --n_num N_NUM         the number of neighbor for metric sampling
+  --o_model O_MODEL     original model path
+  --e_model E_MODEL     embedding model path
+  --seed SEED           random seed
+```
+
+## Model ZOO ##
+Currently, we support the pretrained model for our model. We used the pretrained SCAN and SimCLR model from SCAN github.
+| Dataset           | Download link |
+|-------------------|---------------| 
+|CIFAR-10           | [Download](https://drive.google.com/file/d/16Wcby-8etsTPPIlsQb9oluk3NN8kSmCX/view?usp=sharing)  |
+|CIFAR-20           | [Download](https://drive.google.com/file/d/118SIQ3YBx1y9Uoq-Wo3FyW9iYELKjcQJ/view?usp=sharing)  |
+|STL-10             | [Download](https://drive.google.com/file/d/1mHLkC2JrKsnMswIeT6wKO4fV97DbTHtJ/view?usp=sharing)  |
