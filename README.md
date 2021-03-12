@@ -27,6 +27,12 @@ This repo is the PyTorch codes for "Improving Unsupervised Image Clustering With
   <img src="./figure/attack.png" width = 600> </center> 
 </p>
 
+4. Robust to adversarially crafted samples. ERM-based unsupervised clustering algorithms can be prone to adversarial attack. Adding RUC to the clustering models improves robustness against adversarial noise.
+
+<p align="center">
+  <img src="./figure/attack.png" width = 600> </center> 
+</p>
+
 ## Required packages ##
 - python == 3.6.10
 - pytorch == 1.1.0
