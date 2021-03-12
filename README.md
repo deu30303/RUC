@@ -1,6 +1,12 @@
 # Improving Unsupervised Image Clustering With Robust Learning #
 This repo is the PyTorch codes for "Improving Unsupervised Image Clustering With Robust Learning (RUC)"
+> [**Improving Unsupervised Image Clustering With Robust Learning**](https://arxiv.org/abs/2012.11150)
+> >
+> Sungwon Park, Sungwon Han, Sundong Kim, Danu Kim, Sungkyu Park, Seunghoon Hong, Meeyoung Cha.
 ## Highlight ##
+
+-  **Accepted at CVPR 2021.**
+- 🏆 __SOTA on 4 benchmarks. Check out [Papers With Code](https://paperswithcode.com/paper/learning-to-classify-images-without-labels) for [Image Clustering](https://paperswithcode.com/task/image-clustering) or [Unsup. Classification](https://paperswithcode.com/task/unsupervised-image-classification).__
 1. RUC is an add-on module to enhance the performance of any off-the-shelf unsupervised learning algorithms. RUC is inspired by robust learning. It first divides clustered data points into clean and noisy set, then refine the clustering results. With RUC, state-of-the-art unsupervised clustering methods; SCAN and TSUC showed showed huge performance improvements. (STL-10 : 86.7%, CIFAR-10 : 90.3%, CIFAR-20 : 54.3%)
 
 <p align="center">
@@ -62,3 +68,16 @@ Currently, we support the pretrained model for our model. We used the pretrained
 |CIFAR-10           | [Download](https://drive.google.com/file/d/16Wcby-8etsTPPIlsQb9oluk3NN8kSmCX/view?usp=sharing)  |
 |CIFAR-20           | [Download](https://drive.google.com/file/d/118SIQ3YBx1y9Uoq-Wo3FyW9iYELKjcQJ/view?usp=sharing)  |
 |STL-10             | [Download](https://drive.google.com/file/d/1mHLkC2JrKsnMswIeT6wKO4fV97DbTHtJ/view?usp=sharing)  |
+
+## Citation
+
+If you find this repo useful for your research, please consider citing our paper:
+
+```
+@article{park2020improving,
+  title={Improving Unsupervised Image Clustering With Robust Learning},
+  author={Park, Sungwon and Han, Sungwon and Kim, Sundong and Kim, Danu and Park, Sungkyu and Hong, Seunghoon and Cha, Meeyoung},
+  journal={arXiv preprint arXiv:2012.11150},
+  year={2020}
+}
+```
