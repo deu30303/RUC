@@ -64,7 +64,7 @@ optional arguments:
 
 ## Model ZOO ##
 Currently, we support the pretrained model for our model. We used the pretrained SCAN and SimCLR model from SCAN github.
-
+(o_model : SCAN , e_model : SimCLR)
 ### SCAN ###
 | Dataset           | o_model | e_model |
 |-------------------|---------------|---------------| 
