@@ -11,8 +11,16 @@ This repo is the PyTorch codes for "Improving Unsupervised Image Clustering With
 
 <p align="center">
   <img src="./figure/main_result.png" /> </center>
+
 </p>
 
+
+<p align="center">
+  <img src="./figure/additonal_result.PNG" width = 400> </center>
+
+</p>
+
+  
 2. Prediction results of existing unsupervised learning algorithms were overconfident.  RUC can make the prediction of existing algorithms softer with better calibration.
 <p align="center">
   <img src="./figure/confidence.png" width = 600> </center>
