@@ -64,6 +64,15 @@ optional arguments:
 
 ## Model ZOO ##
 Currently, we support the pretrained model for our model. We used the pretrained SCAN and SimCLR model from SCAN github.
+
+### SCAN ###
+| Dataset           | o_model | e_model |
+|-------------------|---------------|---------------| 
+|CIFAR-10           | [Download](https://drive.google.com/file/d/1ONJbw6Qnccgl20uN38pS3RgpqeobAWxb/view?usp=sharing)  | [Download](https://drive.google.com/file/d/1uczIKDCQRZiysgGmyaro0Ukk8VIDQlu3/view?usp=sharing)  |
+|CIFAR-20           | [Download](https://drive.google.com/file/d/1SWXqE5Esu4j4n7QUrL6kbR39Xzb6bgJg/view?usp=sharing)  | [Download](https://drive.google.com/file/d/1JzzMjqvd3zPNDh0ndWWfgJrxAEg3jTKw/view?usp=sharing)  |
+|STL-10             | [Download](https://drive.google.com/file/d/15lFVyOjZvGbqdZ1R150XL9-SuGgo57kp/view?usp=sharing)  | [Download](https://drive.google.com/file/d/148D5ys5KA4Xm2sSBDqNmCUxiCgzf0cP6/view?usp=sharing)  |
+
+### Ours ###
 | Dataset           | Download link |
 |-------------------|---------------| 
 |CIFAR-10           | [Download](https://drive.google.com/file/d/16Wcby-8etsTPPIlsQb9oluk3NN8kSmCX/view?usp=sharing)  |
