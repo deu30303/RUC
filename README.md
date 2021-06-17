@@ -7,7 +7,7 @@ This repo is the PyTorch codes for "Improving Unsupervised Image Clustering With
 
 -  **Accepted at CVPR 2021.**
 - 🏆 __SOTA on 4 benchmarks. Check out [Papers With Code](https://paperswithcode.com/paper/learning-to-classify-images-without-labels) for [Image Clustering](https://paperswithcode.com/task/image-clustering) or [Unsup. Classification](https://paperswithcode.com/task/unsupervised-image-classification).__
-1. RUC is an add-on module to enhance the performance of any off-the-shelf unsupervised learning algorithms. RUC is inspired by robust learning. It first divides clustered data points into clean and noisy set, then refine the clustering results. With RUC, state-of-the-art unsupervised clustering methods; SCAN and TSUC showed showed huge performance improvements. (STL-10 : 86.7%, CIFAR-10 : 90.3%, CIFAR-20 : 54.3%)
+1. RUC is an add-on module to enhance the performance of any off-the-shelf unsupervised learning algorithms. RUC is inspired by robust learning. It first divides clustered data points into clean and noisy set, then refine the clustering results. With RUC, state-of-the-art unsupervised clustering methods; SCAN and TSUC showed showed huge performance improvements. (STL-10 : 86.7%, CIFAR-10 : 90.3%, CIFAR-20 : 54.3%, CIFAR-100 : 36.5 %, ImageNet-50 : 78.5)
 
 <p align="center">
   <img src="./figure/main_result.png" /> </center>
