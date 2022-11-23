@@ -92,10 +92,10 @@ Currently, we support the pretrained model for our model. We used the pretrained
 If you find this repo useful for your research, please consider citing our paper:
 
 ```
-@article{park2020improving,
+@inproceedings{park2021improving,
   title={Improving Unsupervised Image Clustering With Robust Learning},
   author={Park, Sungwon and Han, Sungwon and Kim, Sundong and Kim, Danu and Park, Sungkyu and Hong, Seunghoon and Cha, Meeyoung},
-  journal={arXiv preprint arXiv:2012.11150},
-  year={2020}
+  booktitle={CVPR},
+  year={2021}
 }
 ```
